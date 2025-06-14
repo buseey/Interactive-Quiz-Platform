@@ -1,0 +1,20 @@
+/* Tailwind CSS imports (these are usually processed by PostCSS/Webpack) */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom global styles if any, e.g., for animations */
+.animate-fade-in-down {
+    animation: fadeInDown 0.8s ease-out;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
